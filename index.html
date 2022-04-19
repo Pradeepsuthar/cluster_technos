@@ -27,23 +27,29 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-toggleable-md navbar-light bg-faded">
-    <a class="navbar-brand" href="#"><img src="site-assets/images/Group 70.png" alt=""></a>
-    <button type="button" class="navbar-toggler text-primary" data-toggle="collapse"
+    <a class="navbar-brand" href="./index.html"><img src="site-assets/images/Group 70.png" alt=""></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
-      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="currentColor"
+      <svg class="navbar-svg-ham" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="#fff"
         xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd"
           d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
       </svg>
+      <svg class="navbar-svg-cross" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="-1 -1 2 2">
+        <path d="M 1 1 L -1 -1 L 0 0 L 1 -1 L -1 1" stroke="#FFf" stroke-width="0.1" fill="none"/>
+      </svg>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 329.26933 329" width="2em" fill="#fff">
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+      </svg> -->
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link active nav-animation" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link nav-animation"  href="about.html">About Us</a>
 
         </li>
         <li class="nav-item dropdown">
@@ -79,16 +85,16 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact-us.html">Contact</a>
+          <a class="nav-link nav-animation" href="contact-us.html">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="career.html">Career</a>
+          <a class="nav-link nav-animation" href="career.html">Career</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Startup</a>
+          <a class="nav-link nav-animation" href="#">Startup</a>
         </li>
         <li class="nav-item d-block d-lg-none">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link nav-animation" href="#">Login</a>
         </li>
         <li class="nav-item d-block d-lg-none">
           <div class="btn__primary demo-btn">
@@ -153,11 +159,13 @@
     <section class="card-section">
       <div class="card">
         <h4>KPO</h4>
-        <a href="#">Learn More</a>
+        <p>(KPO) knowledge process outsourcing is a firm, that does the knowledge and information related work delegated by an organization in need of it.</p>
+        <a href="./solutions/kpo.html">Learn More</a>
       </div>
       <div class="card">
         <h4>BPO</h4>
-        <a href="#">Learn More</a>
+        <h5>BUSINESS PROCESS OUTSOURCING</h5>
+        <a href="./solutions/bpo.html">Learn More</a>
       </div>
       <div class="card">
         <h4>Development</h4>
@@ -165,7 +173,7 @@
       </div>
       <div class="card">
         <h4>ITeS</h4>
-        <a href="#">Learn More</a>
+        <a href="./solutions/ITeS.html">Learn More</a>
       </div>
       <div class="card">
         <h4>Hire Developers</h4>
@@ -368,29 +376,29 @@
   <section class="jumbotron jumbotron-fluid my-0">
     <div class="clip__path"></div>
     <div class="container count-container">
-      <div class="row">
-        <div class="col-3">
+      <div class="row flex-box-row">
+        <div class="counter-div">
           <h1 class="count">Country's</h1>
           <div class="counter-class">
             <h1 id="value">4</h1>
             <h1>+</h1>
           </div>
         </div>
-        <div class="col-3">
+        <div class="counter-div">
           <h1 class="count">Client</h1>
           <div class="counter-class">
             <h1 id="value1">5</h1>
             <h1>+</h1>
           </div>
         </div>
-        <div class="col-3">
+        <div class="counter-div">
           <h1 class="count">Campaign</h1>
           <div class="counter-class">
             <h1 id="value2">4</h1>
             <h1>+</h1>
           </div>
         </div>
-        <div class="col-3">
+        <div class="counter-div">
           <h1 class="count">Resources</h1>
           <div class="counter-class">
             <h1 id="value3">100</h1>
@@ -534,12 +542,12 @@
                       <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                           <button class="toggle-button btn btn-link collapsed" data-toggle="collapse"
-                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                             UI & UX Developer
                           </button>
                         </h5>
                       </div>
-                      <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur earum nemo non
                           fugiat
@@ -638,7 +646,7 @@
   <!-- Video Section Text -->
   <section class="jumbotron jumbotron-fluid my-0 background_gradient">
     <div class="container-fluid">
-      <div class="row m-2" style="justify-content: space-between;">
+      <div class="row m-2" style="justify-content: space-around;">
         <div class="card cards-section">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -823,6 +831,7 @@
     
     const obj3 = document.getElementById("value3");
     animateValue3(obj3, 0,100, 2000);
+    
   </script>
 </body>
 

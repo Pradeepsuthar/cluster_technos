@@ -1,5 +1,9 @@
 @import "common.css";
 /* Primary Button */
+body::-webkit-scrollbar{
+    display: none;
+    }
+    
 .btn__primary {
     border-radius: 8px;
     width: auto;

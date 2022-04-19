@@ -1,3 +1,6 @@
+body::-webkit-scrollbar{
+    display: none;
+    }
 .blue-box .circle-btn {
     background: #0099da;
 }

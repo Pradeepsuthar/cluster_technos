@@ -1,5 +1,9 @@
 @import "common.css";
 /* Primary Button */
+
+body::-webkit-scrollbar{
+    display: none;
+    }
 .fa-brands {
     font-size: 40px;
 }
