@@ -1,5 +1,81 @@
 @import "common.css";
 /* Primary Button */
+.fa-brands {
+    font-size: 40px;
+}
+.card-div{
+    border-radius: 10px;
+}
+.toggle-button{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.toggle-button:hover {
+    text-decoration: none!important;
+    color: white!important;
+}
+.toggle-button:focus{
+    text-decoration: none!important;
+    box-shadow: none!important;
+    color: white!important;
+}
+.card-header{
+    background-color: var(--blue);
+    border-radius: 10px!important;
+}
+.team-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 10px 2px rgb(0 0 0 / 20%);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-front img{
+      width: 300px;
+      height: 300px;
+  }
+  .flip-card-back .d-flex {
+    position: relative;
+    top: 40px;
+    justify-content: center;
+  }
+  .flip-card-back {
+    background-color: #ffffff;
+    color: white;
+    transform: rotateY(180deg);
+  }
 .btn__primary {
     border-radius: 8px;
     width: auto;
@@ -91,11 +167,6 @@
     height: auto;
     border-bottom: none;
 }
-ul > li > a.active {
-    color: var(--primary) !important;
-    font-weight: bold !important;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
-}
 ul > li > a {
     font-family: var(--font-family-inter) !important;
     font-style: normal !important;
@@ -106,10 +177,6 @@ ul > li > a {
     color: var(--white) !important;
     --webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-}
-ul > li > a:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
-    color: var(--primary) !important;
 }
 .navbar-brand > img {
     width: 200px;

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-toggleable-md navbar-light bg-faded">
         <a class="navbar-brand" href="#"><img src="site-assets/images/Group 70.png" alt=""></a>
         <button type="button" class="navbar-toggler text-primary" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,34 +34,51 @@
                     <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="hidebtn" href="javascript:myfunction()">About Us</a>
+                    <a class="nav-link" href="about.html">About Us</a>
 
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Solutions</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdownButton" href="#">Solutions</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./solutions/kpo.html">KPO</a>
+                        <hr>
+                        <a class="dropdown-item" href="./solutions/bpo.html">BPO</a>
+                        <hr>
+                        <a class="dropdown-item" href="./solutions/ITeS.html">ITeS</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link industry-class dropdown-toggle" id="dropdownMenuButton" href="industry.html">Industry</a>
+                    <a class="nav-link industry-class dropdown-toggle" id="dropdownMenuButton"
+                        href="industry.html">Industry</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="/industries/automative.html">AUTOMATIVE</a><hr>
-                      <a class="dropdown-item" href="/industries/real-estate.html">REAL ESTATE</a><hr>
-                      <a class="dropdown-item" href="/industries/retail-commerce.html">RETAIL AND COMMERCE</a><hr>
-                      <a class="dropdown-item" href="/industries/health-care.html">HEALTH CARE</a><hr>
-                      <a class="dropdown-item" href="/industries/manufacturing.html">MANUFACTURING</a><hr>
-                      <a class="dropdown-item" href="/industries/professional-services.html">PROFESSIONAL SERVICES</a><hr>
-                      <a class="dropdown-item" href="/industries/software-vendors.html">SOFTWARE VENDORS</a><hr>
-                      <a class="dropdown-item" href="/industries/banking-finance.html">BANKING & FINANCE</a><hr>
-                      <a class="dropdown-item" href="/industries/education.html">EDUCATION</a>
+                        <a class="dropdown-item" href="./industries/automative.html">AUTOMATIVE</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/real-estate.html">REAL ESTATE</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/retail-commerce.html">RETAIL AND COMMERCE</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/health-care.html">HEALTH CARE</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/manufacturing.html">MANUFACTURING</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/professional-services.html">PROFESSIONAL
+                            SERVICES</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/software-vendors.html">SOFTWARE VENDORS</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/banking-finance.html">BANKING & FINANCE</a>
+                        <hr>
+                        <a class="dropdown-item" href="./industries/education.html">EDUCATION</a>
                     </div>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pricing.html">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact-us.html">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Startup</a>
                 </li>
                 <li class="nav-item d-block d-lg-none">
                     <a class="nav-link" href="#">Login</a>
@@ -100,147 +117,158 @@
 
 
     <!-- <div class="container-fluid"> -->
-        <div class="industry-cards row">
-            <a href="/industries/automative.html" class="col-lg-3" >
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/automotive.png" alt="" style="max-width: 45px;
+    <div class="industry-cards row">
+        <a href="/industries/automative.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/automotive.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">AUTOMATIVE</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Chornis develops end to end automotive business solutions focusing on dealer
-                            management, CRM and ERP solutions to expand product portfolio and to boost supply chain
-                            management.</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
+                <div class="card-body">
+                    <h5 class="card-title">AUTOMATIVE</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Chornis develops end to end automotive business solutions focusing on dealer
+                        management, CRM and ERP solutions to expand product portfolio and to boost supply chain
+                        management.</p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
 
-            <a href="/industries/real-estate.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/real-estate.png" alt="" style="max-width: 45px;
+        <a href="/industries/real-estate.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/real-estate.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">REAL ESTATE</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Display your properties in a better way and connect with potential buyers to
-                            accelerate the sale.
-                            Chornis helps in developing online portals, mobile applications, and full-cycle CRM solutions
-                            which provide real estate businesses with a competitive advantage.
-                        </p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
-            
-            <a href="/industries/retail-commerce.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/ecommerce.png" alt="" style="max-width: 45px;
-                        max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">RETAIL AND COMMERCE</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Chornis provides advanced solutions for the retail and commerce industry and is
-                            proficient in rendering holistic business strategies and services including mobile or iPad
-                            applications, business pages or websites, and CRM systems that are aligned to your business
-                            story and image.</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
+                <div class="card-body">
+                    <h5 class="card-title">REAL ESTATE</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Display your properties in a better way and connect with potential buyers to
+                        accelerate the sale.
+                        Chornis helps in developing online portals, mobile applications, and full-cycle CRM solutions
+                        which provide real estate businesses with a competitive advantage.
+                    </p>
+                    <!-- <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="/industries/health-care.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/healthcare.png" alt="" style="max-width: 45px;
+        <a href="/industries/retail-commerce.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/ecommerce.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">HEALTH CARE</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Chornis helps create realistic and relatable health care solutions with better
-                            directions and orderly conduct by abiding by the rules and regulations of the government and
-                            repressing the ascending overall costs.</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
+                <div class="card-body">
+                    <h5 class="card-title">RETAIL AND COMMERCE</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Chornis provides advanced solutions for the retail and commerce industry and is
+                        proficient in rendering holistic business strategies and services including mobile or iPad
+                        applications, business pages or websites, and CRM systems that are aligned to your business
+                        story and image.</p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
 
-            <a href="/industries/manufacturing.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/manufacturing.png" alt="" style="max-width: 45px;
+        <a href="/industries/health-care.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/healthcare.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">MANUFACTURING</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Calibre to covert Statistics into Useable Data and capacity to create balance Between Quality and Cost is needed of the manufacturing industry, and Chornis create solutions that integrate ERP and inventory management systems with web applications for enhanced data and legacy migration accustomed to your business.
-                            </p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
-            <a href="/industries/professional-services.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/services.png" alt="" style="max-width: 45px;
+                <div class="card-body">
+                    <h5 class="card-title">HEALTH CARE</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Chornis helps create realistic and relatable health care solutions with better
+                        directions and orderly conduct by abiding by the rules and regulations of the government and
+                        repressing the ascending overall costs.</p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
+
+        <a href="/industries/manufacturing.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/manufacturing.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">PROFESSIONAL SERVICES</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">It is always beneficial to accompany time and adapt to the advancements it brings. Chornis offers workable and customised professional services be it Accounting, Research and Development, Architecture and Business Process Management Marketing Project Management, etc.
-                            </p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
-            <a href="/industries/software-vendors.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/vendor.png" alt="" style="max-width: 45px;
+                <div class="card-body">
+                    <h5 class="card-title">MANUFACTURING</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Calibre to covert Statistics into Useable Data and capacity to create balance
+                        Between Quality and Cost is needed of the manufacturing industry, and Chornis create solutions
+                        that integrate ERP and inventory management systems with web applications for enhanced data and
+                        legacy migration accustomed to your business.
+                    </p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
+        <a href="/industries/professional-services.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/services.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">SOFTWARE VENDORS</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Our ISVs partner benefits thoroughly as Chornis deliver solutions that provide cloud credits, migration support, expert technical support, go-to-market support, execute proactively the partner strategy and drive engagement based on data-driven findings. successfully manage multiple projects with a reduction in cost and advancement in time.
-                            </p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
-            <a href="/industries/banking-finance.html" class="col-lg-3">
-                <div class="card py-3">
-                    <div class="card-image">
-                        <img src="https://www.xicom.biz/images/icons/industries/banking.png" alt="" style="max-width: 45px;
+                <div class="card-body">
+                    <h5 class="card-title">PROFESSIONAL SERVICES</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">It is always beneficial to accompany time and adapt to the advancements it
+                        brings. Chornis offers workable and customised professional services be it Accounting, Research
+                        and Development, Architecture and Business Process Management Marketing Project Management, etc.
+                    </p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
+        <a href="/industries/software-vendors.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/vendor.png" alt="" style="max-width: 45px;
                         max-height: 50px;">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">BANKING & FINANCE</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">When facing problems like changing Business Models, Outdated Mobile Experiences, or Security Breaches. IT solutions offered to banking and finance by Chornis has proved to procure long-run gains by offering data storage, file management, monetization of data assets, development of mobile wallets and robust financial applications.
-                            </p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
                 </div>
-            </a>
-        </div>
+                <div class="card-body">
+                    <h5 class="card-title">SOFTWARE VENDORS</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Our ISVs partner benefits thoroughly as Chornis deliver solutions that provide
+                        cloud credits, migration support, expert technical support, go-to-market support, execute
+                        proactively the partner strategy and drive engagement based on data-driven findings.
+                        successfully manage multiple projects with a reduction in cost and advancement in time.
+                    </p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
+        <a href="/industries/banking-finance.html" class="col-lg-3">
+            <div class="card py-3">
+                <div class="card-image">
+                    <img src="https://www.xicom.biz/images/icons/industries/banking.png" alt="" style="max-width: 45px;
+                        max-height: 50px;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">BANKING & FINANCE</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">When facing problems like changing Business Models, Outdated Mobile
+                        Experiences, or Security Breaches. IT solutions offered to banking and finance by Chornis has
+                        proved to procure long-run gains by offering data storage, file management, monetization of data
+                        assets, development of mobile wallets and robust financial applications.
+                    </p>
+                    <!-- <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </a>
+    </div>
     <!-- </div> -->
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
