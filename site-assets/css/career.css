@@ -1,5 +1,7 @@
 @import "common.css";
 /* Primary Button */
+
+
 .card-div{
     border-radius: 10px;
 }
@@ -427,6 +429,32 @@ footer .row .col-12 ul > li > a:hover {
     .navbar-brand > img {
         width: 150px;
     }
+    
+.container{
+    width: 100%;
+}
+.container .row{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    gap: 2em;
+    width: 100%;
+}
+.container .row .col-5{
+max-width: 100%;
+    width: 100% !important;
+}
+.container .row .col-7{
+max-width: 100%;
+    width: 100% !important;
+
+}
+
+.customer_companies_container .row .col{
+    max-width: 100%;
+        width: 100% !important;
+
+}
     .nav {
         display: -ms-flexbox !important;
         display: grid !important;

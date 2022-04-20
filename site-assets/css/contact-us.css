@@ -11,3 +11,22 @@ section .card {
 .send-message {
     text-align: right;
 }
+.btn__primary .eff {
+    width: 100%;
+    height: 50px;
+    left: -100%;
+    background: var(--clr-primary-sky);
+    position: absolute;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+@media  (max-width:992px) {
+    .form-name-ip{
+        display: flex;
+        flex-direction: row !important;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+}
+

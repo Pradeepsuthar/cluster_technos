@@ -31,7 +31,10 @@ body::-webkit-scrollbar{
 .team-list{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
 }
 .flip-card {
     background-color: transparent;
@@ -76,6 +79,8 @@ body::-webkit-scrollbar{
     justify-content: center;
   }
   .flip-card-back {
+      padding: 1em;
+      padding-top: 2em;
     background-color: #ffffff;
     color: white;
     transform: rotateY(180deg);

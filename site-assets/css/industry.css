@@ -1,3 +1,10 @@
+:root{
+    --clr-primary-sky: #489FEE;
+    --clr-primary-green: #39b386;
+    --clr-white: #fff;
+    --clr-dark: #1c0732;
+}
+
 body::-webkit-scrollbar{
     display: none;
     }
@@ -51,7 +58,7 @@ body .real-estate-image {
 }
 
 .industry-cards .card{
-    height: 320px;
+    height: 360px;
     margin: 8px 10px;
     position: relative;
 }
@@ -70,7 +77,7 @@ body .real-estate-image {
 }
 .industry-cards .card:hover .card-body .card-title{
     /* position: absolute; */
-    color: var(--blue)
+    color: var(--clr-primary-sky)
 }
 .industry-cards .card:hover .card-image{
 filter: brightness(0) invert(1);
@@ -88,6 +95,139 @@ filter: brightness(0) invert(1);
 }
 
 @import "common.css";
+
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu {
+    left: auto;
+    top: auto;
+    background-color: #489FEE !important;
+    /* text-align: center; */
+}
+
+.dropbtn {
+    color: var(--clr-white);
+    font-size: 19px !important;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-item{
+color: var(--clr-primary-sky) !important;
+cursor: pointer;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--clr-white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: var(--clr-primary-sky) !important;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+        color: var(--clr-white)!important;
+    }
+    
+  .dropbtn:hover{
+      color: var(--clr-white);
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: var(--clr-primary-sky);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: var(--clr-white);
+      color: var(--clr-primary-sky);
+    }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+
+
+  .navbar {
+    background-color: #489FEE;
+    color: #fff;
+    padding: 5px 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+}
+
+.nav-animation {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+  }
+  
+  .nav-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
 /* Primary Button */
 /* .elementor-4 .elementor-element.elementor-element-8212166 > .elementor-container{
     max-width: 1440px;
@@ -333,7 +473,7 @@ ul > li > a:hover {
     font-weight: bold!important;
 }
 .navbar-brand > img {
-    width: 100px;
+    width: 70px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .nav__toggle__btn {
@@ -592,22 +732,39 @@ footer .row .col-12 ul > li > a {
     font-size: 14px;
     padding: 0 0 2px;
 }
+
 footer .row .col-12 ul > li > a:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: var(--primary);
     text-decoration: none;
 }
+
+@media (max-width:1170px) {
+    .navbar {
+        padding: 7px 20px;
+        
+    }
+
+    .nav-link{
+        font-size: 17px !important;
+    }
+}
+
 @media (max-width:992px) {
     /* Navbar */
     .navbar {
         padding: 7px 20px;
     }
     .navbar-brand > img {
-        width: 150px;
+        width: 70pxpx;
     }
     .nav {
         display: -ms-flexbox !important;
-        display: grid !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
         -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
         padding-left: 0 !important;

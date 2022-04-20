@@ -1,281 +1,497 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="../site-assets/images/favicon.png" type="image/gif" sizes="16x16">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      href="../site-assets/images/Group 70.png"
+      type="image/gif"
+      sizes="16x16"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../site-assets/css/index.css">
-    <link rel="stylesheet" href="../site-assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="../site-assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="path/to/fontawesome.min.css">
-    <link rel="stylesheet" href="../site-assets/css/automative.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../site-assets/css/index.css" />
+    <link rel="stylesheet" href="../site-assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="../site-assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
+    <link rel="stylesheet" href="../site-assets/css/automative.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Cluster Technos</title>
 
     <style>
-        .blue-box {
-            position: sticky;
-            top: 100px;
-        }
+        .btn__primary .eff {
+    width: 100%;
+    height: 50px;
+    left: -100%;
+    background: var(--clr-primary-sky);
+    position: absolute;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+         .navbar-brand img{
+        width: 70px;
+      }
+      .blue-box {
+        position: sticky;
+        top: 100px;
+      }
 
-        .head-section {
-            margin-bottom: 25px;
-        }
+      .head-section {
+        margin-bottom: 25px;
+      }
 
-        .head-section h3 {
-            margin-top: 0px;
-            color: black;
-        }
+      .head-section h3 {
+        margin-top: 0px;
+        color: black;
+      }
 
-        .bpo-head {
-            font-weight: 800;
-        }
+      .bpo-head {
+        font-weight: 800;
+      }
 
-        .industries-details {
-            padding: 30px 15px;
-        }
+      .industries-details {
+        padding: 30px 15px;
+      }
 
-        .bpo-body-section {
-            margin-bottom: 25px;
-        }
+      .bpo-body-section {
+        margin-bottom: 25px;
+      }
 
-        .body-tag {
-            text-align: justify;
-            color: #758495;
-        }
+      .body-tag {
+        text-align: justify;
+        color: #758495;
+      }
 
-        strong {
-            color: black;
-            font-weight: 500;
-        }
+      strong {
+        color: black;
+        font-weight: 500;
+      }
+      .real-estate-image {
+        position: relative;
+        height: 600px;
+      }
+
+      .real-estate-image img{
+        height: 500px;
+      }
+
+      .industry-cards a:hover {
+        text-decoration: none;
+      }
+      .industry-cards .col-lg-3 {
+        padding: 0 0;
+      }
+
+      .real-estate-image .image-contain {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+      }
+      .real-estate-image .red-border {
+        position: absolute;
+        top: 40%;
+        left: 10.3%;
+        border-top: 3px solid #ef323a;
+        display: inline-block;
+        width: 150px;
+      }
+      .real-estate-image .image-tagline {
+        position: absolute;
+        top: 45%;
+        left: 10.3%;
+        font-size: 30px;
+        color: #fff;
+        max-width: 800px;
+        font-weight: 700;
+      }
+
+      .real-estate-image .image-contain > h1 {
+        color: #fff;
+        font-size: 75px;
+        letter-spacing: -4px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      @media (max-width:992px) {
+        .nav {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    padding-left: 0 !important;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: initial !important;
+    margin-top: 30px !important;
+}
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-toggleable-md navbar-light bg-faded">
-        <a class="navbar-brand" href="#"><img src="../site-assets/images/Group 70.png" alt=""></a>
-        <button type="button" class="navbar-toggler text-primary" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
-            </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link active nav-animation" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-animation" href="../about.html">About Us</a>
-
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdownButton" href="#">Solutions</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="kpo.html">KPO</a>
-                        <hr>
-                        <a class="dropdown-item" href="bpo.html">BPO</a>
-                        <hr>
-                        <a class="dropdown-item" href="ITeS.html">ITeS</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdownMenuButton" href="../industry.html">Industry</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="../industries/automative.html">AUTOMATIVE</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/real-estate.html">REAL ESTATE</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/retail-commerce.html">RETAIL AND COMMERCE</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/health-care.html">HEALTH CARE</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/manufacturing.html">MANUFACTURING</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/professional-services.html">PROFESSIONAL
-                            SERVICES</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/software-vendors.html">SOFTWARE VENDORS</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/banking-finance.html">BANKING & FINANCE</a>
-                        <hr>
-                        <a class="dropdown-item" href="../industries/education.html">EDUCATION</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-animation" href="../contact-us.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-animation" href="../career.html">Career</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-animation" href="#">Startup</a>
-                </li>
-                <li class="nav-item d-block d-lg-none">
-                    <a class="nav-link nav-animation" href="#">Login</a>
-                </li>
-                <li class="nav-item d-block d-lg-none">
-                    <div class="btn__primary demo-btn">
-                        <div class="eff"></div>
-                        <a href="#"> Get a Demo </a>
-                    </div>
-                </li>
-            </ul>
-            <div class="nav__btns my-auto ml-auto">
-                <!-- <a class="login-link" href="#">Login</a> -->
-                <div class="btn__primary demo-btn">
-                    <div class="eff"></div>
-                    <a href="#"> Get Quote</a>
-                </div>
+      <a class="navbar-brand" href="../index.html"><img src="../site-assets/images/Group 70.png" alt=""></a>
+      <button type="button" id="nav-button" class="navbar-toggler" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <svg class="navbar-svg-ham" id="navbar-svg-ham" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="#fff"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        <svg class="navbar-svg-cross" id="navbar-svg-cross" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="-1 -1 2 2">
+          <path d="M 1 1 L -1 -1 L 0 0 L 1 -1 L -1 1" stroke="#FFf" stroke-width="0.1" fill="none"/>
+        </svg>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 329.26933 329" width="2em" fill="#fff">
+          <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+        </svg> -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-animation" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-animation"  href="../about.html">About Us</a>
+  
+          </li>
+  
+          <li>
+            <div class="nav-item dropdown">
+              <a class="dropbtn nav-link avtive dropdown-toggle">Solution</a>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="../solutions/kpo.html">KPO</a>
+                <hr>
+                <a class="dropdown-item" href="../solutions/bpo.html">BPO</a>
+                <hr>
+                <a class="dropdown-item" href="../solutions/ITeS.html">ITeS</a>
+              </div>
             </div>
+          </li>
+          <li>
+            <div class="nav-item dropdown">
+              <a href="../industry.html" class="dropbtn nav-link dropdown-toggle">Industry</a>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="../industries/automative.html">AUTOMATIVE</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/real-estate.html">REAL ESTATE</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/retail-commerce.html">RETAIL AND COMMERCE</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/health-care.html">HEALTH CARE</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/manufacturing.html">MANUFACTURING</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/professional-services.html">PROFESSIONAL SERVICES</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/software-vendors.html">SOFTWARE VENDORS</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/banking-finance.html">BANKING & FINANCE</a>
+                <hr>
+                <a class="dropdown-item" href="../industries/education.html">EDUCATION</a>
+              </div>
+            </div>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link nav-animation" href="../contact-us.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-animation" href="../career.html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-animation" href="#">Startup</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-animation" href="#">Login</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <div class="btn__primary demo-btn">
+              <div class="eff"></div>
+              <a href="#"> Get a Demo </a>
+            </div>
+          </li>
+        </ul>
+        <div class="nav__btns my-auto ml-auto">
+          <!-- <a class="login-link" href="#">Login</a> -->
+          <div class="btn__primary demo-btn">
+            <div class="eff"></div>
+            <a href="#"> Get Quote</a>
+          </div>
         </div>
+      </div>
     </nav>
+    <div class="real-estate-image">
+      <img
+        src="https://www.xicom.biz/images/headers/industries.jpg"
+        class="w-100"
+        alt=""
+        style="background-size: cover"
+      />
 
-    <div class="industries-details">
-        <div class="container-fluid">
-            <div class="head-section">
-                <h1 class="bpo-head">BPO Services </h1>
-                <h3>(BUSINESS PROCESS OUTSOURCING)</h3>
-            </div>
-            <div class="bpo-body-section">
-                <div class="body-tag">
-                    <p class="m-0">Business process outsourcing is a practice in the business world in which a business
-                        or an organization when pinpointing a certain job or operation which cannot be performed by the
-                        business itself, due to lack of time or workforce or attention which that particular job
-                        deserves, delegates to an outside firm which is expert in accomplishing that task or in turn,
-                        owns, administrates and manages the selected processes based on defined performance measures.
-                    </p>
-                </div>
-            </div>
-            <div class="inner-container row">
-                <div class="col-lg-8 left-sec">
-                    <div class="title mt-0"> </div>
-                    <div class="para"> In general, businesses outsource in two realms: front and back office.
-                        Back office outsourcing refers to core business support operations such as accounting, payment
-                        processing, IT services, human resources, regulatory compliance, etc.
-                        And front office tasks are customer-related services such as tech support, sales, and marketing.
-                        Majorly BPOs are known as call centres because a huge chunk of their revenue gets generated from
-                        call centres only.
-                    </div>
-                    <div class="para"><strong>TELEPHONE ANSWERING SERVICE :</strong>
-                        It is said that first impression is everything so is with the business as making your customers
-                        satisfied and well understood is important. And telephone answering service makes it easy for
-                        customers to contact you and clear the queries they have otherwise you lose them to one of your
-                        competitors. Importantly, it also allows you to concentrate on the crucial tasks of your
-                        business.
-                        So outsourcing phone answering services to an experienced and skilled phone answering service
-                        provider becomes a potent step.
+      <div class="image-contain">
+        <h1>BPO Services</h1>
+      </div>
 
-                    </div>
-                    <p class="para"><strong>INBOUND CALL CENTER SERVICES :</strong> Companies with hundred tasks in hand at a moment Cannot certainly put energy to engage in the complaints or queries from the customer side. These BPOs provide services of customer engagement handle inbound call centre services by answering questions and resolving customers’ concerns or queries and complaints. Since they are the only contact many customers will ever have with your business, it’s important that these representatives are polite, helpful, and well-versed in company policy.</p>
-                    <p class="para"><strong>MORTGAGE MARKETING :</strong> As BPOs are into calling and saling products so mortgage marketing which is an intrusive part of baking is generally outsourced from BPOs to inform, educate, and persuade their audiences, evaluate loan applications and analyse applicants’ creditworthiness to use their mortgage services over another.</p>
-                    <p class="para"><strong>OUTBOUND CALL CENTER SERVICES :</strong> The call centre can be a synonym of BPOs as the majority of its tasks are to deal with clients on call and make them well understood and satisfied. Outbound call centres are types of call centres that tend to make more calls than they receive as the main focus is reaching out to potential customers, making sales, and publicizing the company. </p>
-                    <p class="para"><strong>PRODUCT ORDERING AND FULFILLMENT :</strong> It is the digital era or to be more precise it’s an e-commerce era where people are coming forward and staging the products they intend to sell online. But in this dazzling atmosphere only staging is not enough one has to fulfil the order made and for that one needs support for different stages of the process because order fulfilment means the order has been delivered to the customer without any hurdle. Here BPOs prove to be the best helping hand one can get to complete the order fulfilment and after-sales service. </p>
-                    <p class="para"><strong>INTERACTIVE VOICE RESPONSE SERVICE :</strong> Interactive voice response or IVR is an automated and pre-recorded business phone system feature that interacts with callers and gathers information by giving them choices via a menu. It gives the user the comfort of 1-1 interaction with no wait. It makes your customer care number available 24X7 where the system is always ready to welcome customers and transfer the call to you during your working hours.  </p>
-                    <p class="para"><strong>BANKING :</strong> The banking industry is all staged with the aid of outsourcing different operations through BPOs be its client support, client acquisition, accounting, documentation, mortgage calling or marketing etc. And outsourcing has helped the banking industry by cutting operating costs, cutting time to open accounts and improving customer acquisition. </p>
-                    <p class="para"><strong>HEALTH CARE :</strong> Healthcare outsourcing means outsourcing activities that leverage and ease the working of administration, staff, and the whole organization in the healthcare industry. In the healthcare industry BPO services are nowadays getting crucial including coding, billing services, transcription, customer service etc </p>
-                    <p class="para"><strong>TOURS AND TRAVELS INDUSTRY SERVICES :</strong> Staffing for everything is a great cost increasing job one can do which in turn majorly is heavy on the head and the tourism industry faces the customers directly there Without any doubt outsourcing helps travel companies manage their volumes of data and transactions, with the use of the best back-office solutions and front office customer service BPOs provide. </p>
-                    <p class="para"><strong>HOSPITALITY INDUSTRY SERVICES :</strong> The hospitality industry runs majorly on directly dealing with customers and at that point when a business does not have well-trained staff capable enough to satisfy customers’ needs then it’s a big fail. That is why delegating this task to manage booking and reservation duties, answering queries across several channels, such as – voice calls, chat, email, and through an online portal gets potent as BPOs are equipped to handle multi-channels. </p>
-                    
-                    <p class="para">To know more about our automotive service offerings and to get in touch with us,
-                        please complete our request information form and we shall get in touch with you shortly.</p>
-                </div>
-                <div class="col-lg-4 right-sec">
-                    <div class="blue-box">
-                        <div class="title-wht"> Request Information </div>
-                        <div class="red-border"></div>
-                        <p> To start a dialogue with our consultant, please complete our contact form and we shall get
-                            in touch with you shortly. </p>
-                        <a href="../contact-us.html" class="circle-btn open-form"> Get Free Estimation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="red-border"></div>
+
+      <div class="image-tagline">
+        <p>
+            BUSINESS PROCESS OUTSOURCING
+        </p>
+      </div>
     </div>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-3">
-                    <h5>Products</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#">Connections</a></li>
-                        <li><a href="#">Random feature</a></li>
-                        <li><a href="#">Protocols</a></li>
-                        <li><a href="#">Personas</a></li>
-                        <li><a href="#">Customer Data Platform</a></li>
-                        <li><a href="#">Integrations catalog</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">GDPR</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <h5>For Developers</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Segment API</a></li>
-                        <li><a href="#">Build on Segment</a></li>
-                        <li><a href="#">Open source</a></li>
-                        <li><a href="#">Engineering team</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <h5>Company</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">FTFY podcast</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">CRM is not enough</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <h5>Support</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Recipes</a></li>
-                        <li><a href="#">Security bulletins</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Become a partner</a></li>
-                    </ul>
-                </div>
+    <div class="industries-details">
+      <div class="container-fluid">
+        <div class="head-section">
+          <h1 class="bpo-head">BPO Services</h1>
+          <h3>(BUSINESS PROCESS OUTSOURCING)</h3>
+        </div>
+        <div class="bpo-body-section">
+          <div class="body-tag">
+            <p class="m-0">
+              Business process outsourcing is a practice in the business world
+              in which a business or an organization when pinpointing a certain
+              job or operation which cannot be performed by the business itself,
+              due to lack of time or workforce or attention which that
+              particular job deserves, delegates to an outside firm which is
+              expert in accomplishing that task or in turn, owns, administrates
+              and manages the selected processes based on defined performance
+              measures.
+            </p>
+          </div>
+        </div>
+        <div class="inner-container row">
+          <div class="col-lg-8 left-sec">
+            <div class="title mt-0"></div>
+            <div class="para">
+              In general, businesses outsource in two realms: front and back
+              office. Back office outsourcing refers to core business support
+              operations such as accounting, payment processing, IT services,
+              human resources, regulatory compliance, etc. And front office
+              tasks are customer-related services such as tech support, sales,
+              and marketing. Majorly BPOs are known as call centres because a
+              huge chunk of their revenue gets generated from call centres only.
             </div>
-    
-            <div>
-                <p class="text-white small">
-                    <span class="mr-3">© Copyright 2022 Cluster Technos - All rights
-                        reserved.</span>
-                    <a href="#" class="mr-3 text-white">Privacy policy</a>
-                    <a href="#" class="mr-3 text-white">Terms of Service</a>
-                    <a href="#" class="mr-3 text-white">Website Data Collection</a>
-                </p>
+            <div class="para">
+              <strong>TELEPHONE ANSWERING SERVICE :</strong>
+              It is said that first impression is everything so is with the
+              business as making your customers satisfied and well understood is
+              important. And telephone answering service makes it easy for
+              customers to contact you and clear the queries they have otherwise
+              you lose them to one of your competitors. Importantly, it also
+              allows you to concentrate on the crucial tasks of your business.
+              So outsourcing phone answering services to an experienced and
+              skilled phone answering service provider becomes a potent step.
             </div>
-        </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="site-assets/js/owl.carousel.js"></script>
-<script src="site-assets/js/owl.carousel.min.js"></script>
-<script src="site-assets/js/index.js"></script>
+            <p class="para">
+              <strong>INBOUND CALL CENTER SERVICES :</strong> Companies with
+              hundred tasks in hand at a moment Cannot certainly put energy to
+              engage in the complaints or queries from the customer side. These
+              BPOs provide services of customer engagement handle inbound call
+              centre services by answering questions and resolving customers’
+              concerns or queries and complaints. Since they are the only
+              contact many customers will ever have with your business, it’s
+              important that these representatives are polite, helpful, and
+              well-versed in company policy.
+            </p>
+            <p class="para">
+              <strong>MORTGAGE MARKETING :</strong> As BPOs are into calling and
+              saling products so mortgage marketing which is an intrusive part
+              of baking is generally outsourced from BPOs to inform, educate,
+              and persuade their audiences, evaluate loan applications and
+              analyse applicants’ creditworthiness to use their mortgage
+              services over another.
+            </p>
+            <p class="para">
+              <strong>OUTBOUND CALL CENTER SERVICES :</strong> The call centre
+              can be a synonym of BPOs as the majority of its tasks are to deal
+              with clients on call and make them well understood and satisfied.
+              Outbound call centres are types of call centres that tend to make
+              more calls than they receive as the main focus is reaching out to
+              potential customers, making sales, and publicizing the company.
+            </p>
+            <p class="para">
+              <strong>PRODUCT ORDERING AND FULFILLMENT :</strong> It is the
+              digital era or to be more precise it’s an e-commerce era where
+              people are coming forward and staging the products they intend to
+              sell online. But in this dazzling atmosphere only staging is not
+              enough one has to fulfil the order made and for that one needs
+              support for different stages of the process because order
+              fulfilment means the order has been delivered to the customer
+              without any hurdle. Here BPOs prove to be the best helping hand
+              one can get to complete the order fulfilment and after-sales
+              service.
+            </p>
+            <p class="para">
+              <strong>INTERACTIVE VOICE RESPONSE SERVICE :</strong> Interactive
+              voice response or IVR is an automated and pre-recorded business
+              phone system feature that interacts with callers and gathers
+              information by giving them choices via a menu. It gives the user
+              the comfort of 1-1 interaction with no wait. It makes your
+              customer care number available 24X7 where the system is always
+              ready to welcome customers and transfer the call to you during
+              your working hours.
+            </p>
+            <p class="para">
+              <strong>BANKING :</strong> The banking industry is all staged with
+              the aid of outsourcing different operations through BPOs be its
+              client support, client acquisition, accounting, documentation,
+              mortgage calling or marketing etc. And outsourcing has helped the
+              banking industry by cutting operating costs, cutting time to open
+              accounts and improving customer acquisition.
+            </p>
+            <p class="para">
+              <strong>HEALTH CARE :</strong> Healthcare outsourcing means
+              outsourcing activities that leverage and ease the working of
+              administration, staff, and the whole organization in the
+              healthcare industry. In the healthcare industry BPO services are
+              nowadays getting crucial including coding, billing services,
+              transcription, customer service etc
+            </p>
+            <p class="para">
+              <strong>TOURS AND TRAVELS INDUSTRY SERVICES :</strong> Staffing
+              for everything is a great cost increasing job one can do which in
+              turn majorly is heavy on the head and the tourism industry faces
+              the customers directly there Without any doubt outsourcing helps
+              travel companies manage their volumes of data and transactions,
+              with the use of the best back-office solutions and front office
+              customer service BPOs provide.
+            </p>
+            <p class="para">
+              <strong>HOSPITALITY INDUSTRY SERVICES :</strong> The hospitality
+              industry runs majorly on directly dealing with customers and at
+              that point when a business does not have well-trained staff
+              capable enough to satisfy customers’ needs then it’s a big fail.
+              That is why delegating this task to manage booking and reservation
+              duties, answering queries across several channels, such as – voice
+              calls, chat, email, and through an online portal gets potent as
+              BPOs are equipped to handle multi-channels.
+            </p>
 
+            <p class="para">
+              To know more about our automotive service offerings and to get in
+              touch with us, please complete our request information form and we
+              shall get in touch with you shortly.
+            </p>
+          </div>
+          <div class="col-lg-4 right-sec">
+            <div class="blue-box">
+              <div class="title-wht">Request Information</div>
+              <div class="red-border"></div>
+              <p>
+                To start a dialogue with our consultant, please complete our
+                contact form and we shall get in touch with you shortly.
+              </p>
+              <a href="../contact-us.html" class="circle-btn open-form">
+                Get Free Estimation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- Footer -->
+   <footer>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3">
+        <h5>Social Links</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Press</a></li>
+          <!-- <li><a href="#">Connections</a></li>
+          <li><a href="#">Random feature</a></li>
+          <li><a href="#">Protocols</a></li>
+          <li><a href="#">Personas</a></li>
+          <li><a href="#">Customer Data Platform</a></li>
+          <li><a href="#">Integrations catalog</a></li> -->
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <h5>Privacy Policy</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="#">Protocols</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Security bulletins</a></li>
+          <!-- <li><a href="#">Segment API</a></li>
+          <li><a href="#">Build on Segment</a></li>
+          <li><a href="#">Open source</a></li>
+          <li><a href="#">Engineering team</a></li> -->
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <h5>Solution Industries</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="../solutions/kpo.html">KPO</a></li>
+          <li><a href="../solutions/bpo.html">BPO</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <!-- <li><a href="#">Careers</a></li>
+          <li><a href="#">FTFY podcast</a></li>
+          <li><a href="#">CRM is not enough</a></li> -->
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <h5>Information</h5>
+        <ul class="list-unstyled text-small">
+          <!-- <li><a href="#">Help center</a></li> -->
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../career.html">Career</a></li>
+          <li><a href="../career.html">Contact us</a></li>
+          <!-- <li><a href="#">Resources</a></li>
+          <li><a href="#">Recipes</a></li> -->
+          <!-- <li><a href="#">Become a partner</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-white small">
+         <span class="mr-3">© Copyright 2022 Cluster Technos - All rights reserved.</span>
+        <a href="#" class="mr-3 text-white">Privacy policy</a>
+        <a href="#" class="mr-3 text-white">Terms of Service</a>
+        <a href="#" class="mr-3 text-white">Website Data Collection</a>
+      </p>
+    </div>
+  </footer>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="site-assets/js/owl.carousel.js"></script>
+  <script src="site-assets/js/owl.carousel.min.js"></script>
+  <script src="site-assets/js/index.js"></script>
 </html>

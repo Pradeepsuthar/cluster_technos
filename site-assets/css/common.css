@@ -44,6 +44,18 @@ body {
     font-family: var(--font-family-inter);
     overflow-x: hidden !important;
 }
+.navbar-brand img{
+    width: 70px;
+  }
+  .btn__primary .eff {
+    width: 100%;
+    height: 50px;
+    left: -100%;
+    background: var(--clr-primary-sky);
+    position: absolute;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
 .text-primary {
     color: var(--primary) !important;
 }
