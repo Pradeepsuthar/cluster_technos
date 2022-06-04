@@ -243,7 +243,7 @@ cursor: pointer;
 .card-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 2em;
     justify-content: space-evenly;
 }
 .card-section .card {
@@ -484,7 +484,7 @@ ul > li > a:hover {
 /* Site Header */
 .site_header {
     margin: 0 auto;
-    padding: 40px 70px;
+    /* padding: 40px 70px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -516,7 +516,7 @@ ul > li > a:hover {
 .site_header .site_header_content {
     width: 49%;
     margin: auto 0;
-    /* padding-left: 80px; */
+    /*padding-left: 80px; */
 }
 .site_header .site_header_content h1 {
     font-style: normal;
@@ -792,7 +792,7 @@ footer .row .col-12 ul > li > a:hover {
     }
     /* Site Header */
     .site_header {
-        width: 100%;
+        width: 100;
         height: 100vh;
         overflow: hidden;
         background-image: none;
@@ -809,7 +809,7 @@ footer .row .col-12 ul > li > a:hover {
     .site_header .site_header_content {
         width: 100%;
         padding: 0 20px;
-        line-break: anywhere;
+        line-break: auto;
     }
     .site_header .background-image img{
         width: 200px;
@@ -884,3 +884,64 @@ footer .row .col-12 ul > li > a:hover {
       margin-left: -1000px;
     }
   }
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    
+    .site_header .site_header_content h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 37px;
+        line-height: 44px;
+        color: black;
+        padding: 20px;
+        margin: 20px;
+    }
+    .site_header.row{
+        height: auto;
+    }
+    .background-image{
+        margin: 10px;
+    }
+
+    .card-section .card{
+        width: 329px
+    }
+
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .site_header_content h1{
+        margin-left: 65px;
+    }
+    .site_header_content p{
+        margin-left: 65px;
+    }
+
+    .btn__primary{
+    margin-left: 65px;
+    }
+    .card-section{
+        margin-left: 34px;
+        margin-right: 0px;
+        margin-top: 10px;
+        width: 95%;
+    }
+    .background-image {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
