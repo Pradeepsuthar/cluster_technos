@@ -46,16 +46,16 @@ body::-webkit-scrollbar{
     padding-left: 5px;
     padding-right: 5px;
     border-left: 1px solid #e5e5e5;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .left-sec {
     padding-right: 10px;
     padding-left: 10px;
     border-right: 1px solid #e5e5e5;
     margin-right: -1px;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .industries-details .container-fluid {
     max-width: 100%;
@@ -103,6 +103,7 @@ body::-webkit-scrollbar{
 }
 body .real-estate-image {
     position: relative;
+    width: 100%;
 }
 
 .industry-cards a:hover{
@@ -351,6 +352,9 @@ ul > li > a {
     color: var(--white) !important;
     --webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 ul > li > a:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
@@ -727,4 +731,53 @@ footer .row .col-12 ul > li > a:hover {
     footer {
         padding: 20px;
     }
+}
+
+ul.listings{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+    .left-sec {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .right-sec {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .image-contain{
+        top:12%;
+    }
+
+    .red-border{
+        top: 43%;
+    }
+
+}
+/* // Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+
+}
+
+/*// Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+
+}
+
+/*// XX-large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px){
+    
 }

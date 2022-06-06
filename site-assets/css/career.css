@@ -389,7 +389,7 @@ ul > li > a {
     line-height: 31px;
     color: #737A96;
     margin-bottom: 20px;
-    word-break: break-all;
+    word-break: normal;
 }
 /* Footer */
 footer {
@@ -562,4 +562,40 @@ max-width: 100%;
     footer {
         padding: 20px;
     }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px){.customer_companies_container .card {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    object-fit: contain;
+    box-shadow: 0px 24px 48px rgba(13, 21, 55, 0.04);
+    border-radius: 4px;
+    padding: 15px;
+    border: none;
+}
+   
+}
+/* // Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+
+}
+
+/*// Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+
+}
+
+/*// XX-large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px){
+    
 }

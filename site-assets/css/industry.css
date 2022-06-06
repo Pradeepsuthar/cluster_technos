@@ -83,7 +83,7 @@ body .real-estate-image {
 filter: brightness(0) invert(1);
 }
 .industry-cards .card .card-body .card-text{
-    font-size: 16px;
+    font-size: 14px;
     color: #758495;
     font-weight: 400;
     line-height: 1.4;
