@@ -524,6 +524,7 @@ ul > li > a:hover {
     font-size: 40px;
     line-height: 44px;
     color: black;
+    
 }
 .site_header .site_header_content p {
     font-style: normal;
@@ -793,7 +794,7 @@ footer .row .col-12 ul > li > a:hover {
     /* Site Header */
     .site_header {
         width: 100;
-        height: 100vh;
+        height: 65vh;
         overflow: hidden;
         background-image: none;
         background-position: right;
@@ -898,12 +899,13 @@ footer .row .col-12 ul > li > a:hover {
         font-size: 37px;
         line-height: 44px;
         color: black;
-        padding: 20px;
-        margin: 20px;
+        padding: 0px;
+        margin: 0px;
     }
     .site_header.row{
         height: auto;
     }
+    
     .background-image{
         margin: 10px;
     }
@@ -945,7 +947,7 @@ footer .row .col-12 ul > li > a:hover {
 }
 .module header .border{
     width: 400px;
-    border: 1px solid red !important;
+    border: 1 px solid red !important;
 }
 .module header p{
     font-size: 1.4rem;
