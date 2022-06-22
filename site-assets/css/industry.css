@@ -13,6 +13,11 @@ body .real-estate-image {
     position: relative;
 }
 
+body{
+    min-height: 100vh;
+    width: 100vw;
+}
+
 .industry-cards a:hover{
     text-decoration: none;
 }
@@ -74,6 +79,7 @@ body .real-estate-image {
 .industry-cards .card:hover .card-body .card-text{
     position: absolute;
     color: #fff;
+    padding-right: 20px;
 }
 .industry-cards .card:hover .card-body .card-title{
     /* position: absolute; */
